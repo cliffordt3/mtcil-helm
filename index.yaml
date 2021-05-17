@@ -3,7 +3,7 @@ entries:
   eck-operator:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-05-16T17:25:21.910641-04:00"
+    created: "2021-05-17T17:47:05.95537-04:00"
     dependencies:
     - condition: installCRDs
       name: eck-operator-crds
@@ -34,7 +34,7 @@ entries:
   elastic-stack:
   - apiVersion: v2
     appVersion: 7.10.0
-    created: "2021-05-16T17:25:21.911974-04:00"
+    created: "2021-05-17T17:47:05.957327-04:00"
     dependencies:
     - name: elasticsearch-exporter
       repository: ""
@@ -51,4 +51,30 @@ entries:
     urls:
     - https://cliffordt3.github.io/mtcil-helm/elastic-stack-0.1.5.tgz
     version: 0.1.5
-generated: "2021-05-16T17:25:21.907999-04:00"
+  fluent-bit:
+  - apiVersion: v1
+    appVersion: 1.6.3
+    created: "2021-05-17T17:47:05.958458-04:00"
+    description: Fast and lightweight log processor and forwarder or Linux, OSX and
+      BSD family operating systems.
+    digest: be90b48bf4ff1b637620829fe3f47a0ae9763967e0718d8ddfb0735b7d4dcc56
+    home: https://fluentbit.io/
+    icon: https://fluentbit.io/assets/img/logo1-default.png
+    keywords:
+    - logging
+    - fluent-bit
+    - fluentd
+    maintainers:
+    - email: eduardo@treasure-data.com
+      name: edsiper
+    - email: naseem@transit.app
+      name: naseemkullah
+    - email: towmeykaw@gmail.com
+      name: Towmeykaw
+    name: fluent-bit
+    sources:
+    - https://github.com/fluent/fluent-bit/
+    urls:
+    - https://cliffordt3.github.io/mtcil-helm/fluent-bit-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-05-17T17:47:05.952875-04:00"
