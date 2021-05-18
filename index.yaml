@@ -3,7 +3,7 @@ entries:
   eck-operator:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-05-17T17:47:05.95537-04:00"
+    created: "2021-05-17T20:20:09.315521-04:00"
     dependencies:
     - condition: installCRDs
       name: eck-operator-crds
@@ -34,7 +34,7 @@ entries:
   elastic-stack:
   - apiVersion: v2
     appVersion: 7.10.0
-    created: "2021-05-17T17:47:05.957327-04:00"
+    created: "2021-05-17T20:20:09.317199-04:00"
     dependencies:
     - name: elasticsearch-exporter
       repository: ""
@@ -54,7 +54,7 @@ entries:
   fluent-bit:
   - apiVersion: v1
     appVersion: 1.6.3
-    created: "2021-05-17T17:47:05.958458-04:00"
+    created: "2021-05-17T20:20:09.318708-04:00"
     description: Fast and lightweight log processor and forwarder or Linux, OSX and
       BSD family operating systems.
     digest: be90b48bf4ff1b637620829fe3f47a0ae9763967e0718d8ddfb0735b7d4dcc56
@@ -77,4 +77,59 @@ entries:
     urls:
     - https://cliffordt3.github.io/mtcil-helm/fluent-bit-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-17T17:47:05.952875-04:00"
+  istio-operator:
+  - apiVersion: v1
+    appVersion: 1.7.2
+    created: "2021-05-17T20:20:09.319346-04:00"
+    description: Helm chart for deploying Istio operator
+    digest: 3ce8e000d79afab867a1c96a6b2407b6b049ed6ed3fa2052a01396cad0b59b83
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - operator
+    name: istio-operator
+    sources:
+    - https://github.com/istio/istio/tree/master/operator
+    urls:
+    - https://cliffordt3.github.io/mtcil-helm/istio-operator-0.1.2.tgz
+    version: 0.1.2
+  istio-stack:
+  - apiVersion: v2
+    appVersion: 1.7.2
+    created: "2021-05-17T20:20:09.321855-04:00"
+    description: A Helm chart for Istio stack deployment
+    digest: 21780cce0e60877b1b65d8d1a7aaf3c001b49813fd852b41dbed45e143523b0f
+    keywords:
+    - Istio
+    - Service Mesh
+    name: istio-stack
+    type: application
+    urls:
+    - https://cliffordt3.github.io/mtcil-helm/istio-stack-0.1.2.tgz
+    version: 0.1.2
+  traefik:
+  - apiVersion: v2
+    appVersion: 2.3.1
+    created: "2021-05-17T20:20:09.322784-04:00"
+    description: A Traefik based Kubernetes ingress controller
+    digest: 07f2fd693ecf2d55a9d5f10ae3f65565be72659b43d203273f98b5f33a17b1ab
+    home: https://traefik.io/
+    icon: https://raw.githubusercontent.com/traefik/traefik/v2.3/docs/content/assets/img/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    maintainers:
+    - email: emile@vauge.com
+      name: emilevauge
+    - email: daniel.tomcej@gmail.com
+      name: dtomcej
+    - email: ldez@traefik.io
+      name: ldez
+    name: traefik
+    sources:
+    - https://github.com/traefik/traefik
+    type: application
+    urls:
+    - https://cliffordt3.github.io/mtcil-helm/traefik-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-05-17T20:20:09.31286-04:00"
